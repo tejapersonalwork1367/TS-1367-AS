@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Little Universe ♡</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+<div id="petals"></div>
+
+<header class="topbar">
+  <a class="brand" href="#" onclick="showPage(0);return false;">♡ us, always</a>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <button onclick="showPage(0)">Home</button>
+    <button onclick="showPage(1)">My feelings</button>
+    <button onclick="showPage(2)">Memories</button>
+    <button onclick="showPage(3)">Letters</button>
+    <button onclick="showPage(4)">Reasons</button>
+    <button onclick="showPage(5)">Our song</button>
+    <button onclick="showPage(6)">Surprise</button>
+    
+  </nav>
+</header>
+
+<main>
+
+<!-- PAGE 1: WELCOME -->
+<section class="page active" id="page0">
+  <div class="welcome-card">
+    <div class="tiny-stars">✧　⋆｡˚　♡　˚｡⋆　✧</div>
+    <p class="eyebrow">HAPPY BOYFRIENDS DAY </p>
+    <div class="big-heart">♡</div>
+    <h1>To my <span>Cute Baby</span></h1>
+    <p class="intro">In a world full of people, somehow my heart found you. Just 20 days of talking, one beautiful first meeting, and a feeling I never expected to find.</p>
+    <p class="handwritten">Every little page holds a piece of my heart, and every word is a little reminder of us... </p>
+    <button class="primary-btn" onclick="showPage(1)">Open your little world <span>♡</span></button>
+    <div class="bottom-flower">✿</div>
+  </div>
+</section>
+
+<!-- PAGE 2: MY FEELINGS -->
+<section class="page" id="page1">
+  <div class="section-wrap">
+    <p class="eyebrow">A PAGE FROM MY HEART</p>
+    <h2>Things I wish <em>you knew</em></h2>
+    <p class="section-sub">Some feelings are too big for ordinary conversations.</p>
+    <div class="note-grid">
+      <article class="note-card rose">
+        <span class="note-icon">♡</span>
+        <p class="note-title">You feel like home</p>
+        <p>Nee daggara unnappudu naaku maa daddy daggara unnattu safe ga, loved ga anipisthundhi. </p>
+        <span class="note-sign">a little truth from me</span>
+      </article>
+      <article class="note-card cream">
+        <span class="note-icon">✿</span>
+        <p class="note-title">My favourite thought</p>
+        <p> Mana chinna chinna moments anni malli malli gurthosthunnayi, and they make me smile. </p>
+        <span class="note-sign">always thinking of you</span>
+      </article>
+      <article class="note-card lilac">
+        <span class="note-icon">୨୧</span>
+        <p class="note-title">Even on hard days</p>
+        <p>I know we won't always have perfect days. But I hope we keep choosing kindness, patience and understanding. I want to share laughter with you and also be there when life feels a little heavy.</p>
+        <span class="note-sign">with all my heart</span>
+      </article>
+      <article class="note-card peach">
+        <span class="note-icon">♡</span>
+        <p class="note-title">If you could see yourself</p>
+        <p>I wish you could see yourself through my eyes, even for a moment. You would understand why your happiness matters to me, why your little habits make me smile and why you are so precious to me.</p>
+        <span class="note-sign">your girl, always</span>
+      </article>
+    </div>
+    <button class="primary-btn" onclick="showPage(2)">Let's revisit our memories →</button>
+  </div>
+</section>
+
+<!-- PAGE 3: MEMORIES -->
+<section class="page" id="page2">
+  <div class="section-wrap">
+    <p class="eyebrow">LITTLE MOMENTS, BIG FEELINGS</p>
+    <h2>Our little <em>universe</em></h2>
+    <p class="section-sub">A place for all the memories I never want to forget.</p>
+
+    <div class="photo-grid">
+      <div class="polaroid tilt-left">
+        <img src="photo1.jpg" alt="Our favourite memory">
+        <p>One of my favourite memories</p>
+      </div>
+
+      <div class="polaroid tilt-right">
+        <img src="photo2.jpg" alt="Your smile">
+        <p>That smile I adore</p>
+      </div>
+
+      <div class="polaroid tilt-right">
+        <img src="photo3.jpg" alt="My happy place">
+        <p>My happy place</p>
+      </div>
+
+      <div class="polaroid tilt-left">
+        <img src="photo4.jpg" alt="A moment together">
+        <p>A moment to keep forever</p>
+      </div>
+    </div>
+
+    <p class="handwritten">I hope we make a thousand more memories together. ♡</p>
+    <button class="primary-btn" onclick="showPage(3)">There are letters for you →</button>
+  </div>
+</section>
+
+<!-- PAGE 4: LETTERS -->
+<section class="page" id="page3">
+  <div class="section-wrap">
+    <p class="eyebrow">OPEN WHEN YOU NEED ME</p>
+    <h2>Letters for <em>your heart</em></h2>
+    <p class="section-sub">Choose an envelope, my love. Each one holds a little message for you.</p>
+    <div class="envelope-grid">
+      <button class="envelope" onclick="openLetter(0)">
+        <span>💌</span><strong>When you miss me</strong><small>Open this letter ♡</small>
+      </button>
+      <button class="envelope" onclick="openLetter(1)">
+        <span>💌</span><strong>When you're sad</strong><small>Open this letter ♡</small>
+      </button>
+      <button class="envelope" onclick="openLetter(2)">
+        <span>💌</span><strong>When you need a hug</strong><small>Open this letter ♡</small>
+      </button>
+      <button class="envelope" onclick="openLetter(3)">
+        <span>💌</span><strong>When you can't sleep</strong><small>Open this letter ♡</small>
+      </button>
+      <button class="envelope" onclick="openLetter(4)">
+        <span>💌</span><strong>When you doubt yourself</strong><small>Open this letter ♡</small>
+      </button>
+      <button class="envelope" onclick="openLetter(5)">
+        <span>💌</span><strong>When you need a smile</strong><small>Open this letter ♡</small>
+      </button>
+    </div>
+    <div id="letterModal" class="modal hidden">
+      <div class="modal-paper">
+        <button class="close-btn" onclick="closeLetter()">×</button>
+        <div class="letter-flower">❀</div>
+        <h3 id="letterTitle">My love,</h3>
+        <p id="letterText"></p>
+        <p class="handwritten">All my love, always ♡</p>
+      </div>
+    </div>
+    <button class="primary-btn" onclick="showPage(4)">A hundred little reasons →</button>
+  </div>
+</section>
+
+<!-- PAGE 5: REASONS -->
+<section class="page" id="page4">
+  <div class="section-wrap">
+    <p class="eyebrow">A LITTLE REMINDER</p>
+    <h2>Reasons I <em>love you</em></h2>
+    <p class="section-sub">Tap each heart to uncover a little reason. ♡</p>
+    <p class="counter"><span id="reasonCount">0</span> little reasons discovered</p>
+    <div class="reason-grid" id="reasonGrid"></div>
+    <p class="handwritten">And somehow, even a hundred reasons wouldn't be enough. ♡</p>
+    <button class="primary-btn" onclick="showPage(5)">Let's listen to our song →</button>
+  </div>
+</section>
+
+<!-- PAGE 6: SONG -->
+<section class="page" id="page5">
+  <div class="section-wrap song-wrap">
+    <p class="eyebrow">A SONG THAT REMINDS ME OF YOU</p>
+    <h2>Our little <em>soundtrack</em></h2>
+    <div class="vinyl">
+      <div class="vinyl-label">♡<small>our song</small></div>
+    </div>
+    <h3 class="song-name">Brooklyn Baby</h3>
+    <p class="song-artist">Lana Del Rey</p>
+    <div class="spotify">
+      <iframe title="Brooklyn Baby by Lana Del Rey"
+        src="https://open.spotify.com/embed/track/1NZs6n6hl8UuMaX0UC0YTz?utm_source=generator&theme=0"
+        width="100%" height="152" style="border:0;border-radius:12px"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"></iframe>
+    </div>
+    <p class="handwritten">If our story had a soundtrack, this would be a part of it. 1.04 - End ♡</p>
+    <button class="primary-btn" onclick="showPage(6)">There's one more surprise →</button>
+  </div>
+</section>
+
+<!-- PAGE 7: GIFT -->
+<section class="page" id="page6">
+  <div class="section-wrap gift-wrap">
+    <p class="eyebrow">JUST ONE MORE THING</p>
+    <h2>A little gift <em>for you</em></h2>
+    <p class="section-sub">I have one last little surprise. Tap the gift to open it. ♡</p>
+    <button class="gift-box" id="giftBox" onclick="openGift()">
+      <span class="gift-emoji">🎁</span>
+      <span class="gift-hint">Tap me, baby!</span>
+    </button>
+    <div id="giftMessage" class="gift-message hidden">
+      <div class="big-heart">💗</div>
+      <h3>My favourite gift is you.</h3>
+      <p>Life naaku chala beautiful things ichina, ninnu naa life loki pampinchinanduku I'm the most grateful. Nuvvu chese chinna chinna gestures, nee care, nee love, nee efforts anni naaku entho special. Ee three days lo nuvvu nannu entha happy ga, safe ga, loved ga feel ayyela chesavo words lo cheppalenu. Nuvvu naaku just love maatrame kaadhu, you're my comfort, my happiness and my home. Manam ilaane kalisi inka enno beautiful memories create chesukovalani, lifetime antha nee pakkana undalani naa korika.</p>
+      <p class="handwritten">I want you in every chapter of my life. I love you so much Amma.🥹❤️🧿♡</p>
+    </div>
+    
+  </div>
+
+</main>
+
+<div class="page-footer">
+  <span>made with all my love</span>
+  <span id="pageNumber">01 / 08</span>
+  <div class="footer-nav">
+    <button onclick="prevPage()">←</button>
+    <button onclick="nextPage()">→</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
